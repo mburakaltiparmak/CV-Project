@@ -19,15 +19,15 @@ const Profile = (props) => {
         <div className="flex flex-col items-stretch gap-6 w-1/3 sm:w-full">
           <h3 className="text-3xl font-bold text-white">{t("5")}</h3>
           <span className="profile-infos">
-            <p className="pr-8 sm:pr-0">{t("6")} :</p>
+            <p className="pr-8 sm:pr-2">{t("6")} :</p>
             <p className="text-white">10.12.1996</p>
           </span>
           <span className="profile-infos">
-            <p className="pr-8 sm:pr-0">{t("7")} :</p>
+            <p className="pr-8 sm:pr-2">{t("7")} :</p>
             <p className="text-white">Kayseri</p>
           </span>
           <span className="profile-infos">
-            <p className="pr-8 sm:pr-0">{t("8")} :</p>
+            <p className="pr-8 sm:pr-2">{t("8")} :</p>
             <span className="flex flex-col text-end">
               <p className="text-white">{t("10")}</p>
               <p className="text-white">{t("16")}</p>

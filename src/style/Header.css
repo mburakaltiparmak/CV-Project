@@ -1,0 +1,18 @@
+.dark-header {
+  background: linear-gradient(to right, #171043 60%, #1a210b 40%);
+}
+
+.light-header {
+  background: linear-gradient(to right, #4731d3 60%, #cbf281 40%);
+}
+
+.light-button {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+}
+.dark-button {
+  background-color: #252128;
+  border: 1px solid white;
+  color: white;
+}

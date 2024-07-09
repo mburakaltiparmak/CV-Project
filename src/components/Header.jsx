@@ -9,7 +9,12 @@ import {
   faToggleOn,
 } from "@fortawesome/free-solid-svg-icons";
 import { useDispatch, useSelector } from "react-redux";
-import { changeLanguage, postMode, sendText, toggleMode } from "../store/actions/actions";
+import {
+  changeLanguage,
+  postMode,
+  sendText,
+  toggleMode,
+} from "../store/actions/actions";
 import { useTranslation } from "react-i18next";
 
 const Header = (props) => {
@@ -58,24 +63,24 @@ const Header = (props) => {
         mode ? "dark-header" : "light-header"
       }`}
     >
-      <div id="first-side" className="flex flex-col justify-between pr-8 w-1/2">
+      <div id="first-side" className="flex flex-col justify-between">
         <div className="flex flex-col items-start justify-between gap-8 w-full ">
           <h2
-            className={`text-2xl font-bold transition duration-500 ease-in-out ${
+            className={`text-2xl font-bold transition duration-500 ease-in-out  ${
               mode ? "text-yellow" : "text-white"
             }`}
           >
             Burak Altıparmak
           </h2>
           <h1
-            className={`text-5xl font-bold w-full transition duration-500 ease-in-out ${
+            className={`text-5xl font-bold transition duration-500 ease-in-out  ${
               mode ? "text-white" : "text-yellow"
             }`}
           >
             {t("1")}
           </h1>
           <p
-            className={`text-lg font-semibold transition duration-500 ease-in-out ${
+            className={`text-lg font-semibold transition duration-500 ease-in-out w-3/5 ${
               mode ? "text-yellow" : "text-white"
             }`}
           >
@@ -118,8 +123,8 @@ const Header = (props) => {
         </div>
       </div>
       <div
-        className="flex flex-col items-center justify-between gap-4 mr-64"
         id="second-side"
+        className="flex flex-col items-start justify-between gap-4 mr-32"
       >
         <div
           className="flex flex-row justify-between gap-12 text-sm font-bold px-8 py-2"
@@ -154,7 +159,7 @@ const Header = (props) => {
           </button>
         </div>
         <img
-          className={`h-[350px] border-4 rounded-full transition duration-500 ease-in-out ${
+          className={`h-[350px] border-4 rounded-full transition duration-500 ease-in-out object-cover ${
             mode ? "border-white" : "border-dark"
           }`}
           src={profileImg}

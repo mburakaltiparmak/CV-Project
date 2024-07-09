@@ -8,6 +8,8 @@ export default {
         yellow: "#CBF281",
         dark: "#171043",
         brown: "#1A210B",
+
+        darkOlive: "#1a210b",
       },
     },
   },

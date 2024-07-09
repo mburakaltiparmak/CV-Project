@@ -7,6 +7,14 @@
 .skills-logo {
   @apply h-[150px] w-[150px];
 }
+
 .profile-infos {
-  @apply flex flex-row justify-between items-start gap-8 w-full text-yellow font-normal text-lg ;
+  @apply flex flex-row justify-between text-yellow font-normal text-lg;
+}
+
+.dark-header {
+  @apply bg-gradient-to-r from-dark to-darkOlive;
+}
+.light-header {
+  @apply bg-gradient-to-r from-purple to-yellow;
 }

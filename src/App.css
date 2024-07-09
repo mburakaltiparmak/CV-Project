@@ -1,11 +1,11 @@
 .skills-container-light {
-  @apply flex flex-row items-center gap-2 text-[#2b2727];
+  @apply flex flex-row sm:flex-col items-center gap-2 text-[#2b2727];
 }
 .skills-container-dark {
-  @apply flex flex-row items-center gap-2 text-white;
+  @apply flex flex-row sm:flex-col items-center gap-2 text-white;
 }
 .skills-logo {
-  @apply h-[150px] w-[150px];
+  @apply h-[150px] w-[150px] object-cover sm:h-[75px] sm:w-[75px];
 }
 
 .profile-infos {

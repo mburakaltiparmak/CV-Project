@@ -40,22 +40,22 @@ const Skills = () => {
 
   return (
     <div
-      className={`py-12 px-32 flex flex-col gap-8 transition duration-500 ease-in-out ${
+      className={`py-12 px-32 sm:px-10 sm:py-6 flex flex-col gap-8 transition duration-500 ease-in-out ${
         mode ? "bg-[#252128]" : "bg-white"
       }`}
     >
       <h2
-        className={`text-5xl font-bold transition duration-500 ease-in-out ${
+        className={`text-5xl sm:text-4xl sm:text-center font-bold transition duration-500 ease-in-out ${
           mode ? "text-[#cbf281]" : "text-[#4832d3]"
         }`}
       >
         {t("3")}
       </h2>
-      <div className="flex flex-wrap justify-between gap-12 font-bold">
+      <div className="flex flex-wrap sm:gap-2 justify-between gap-12 font-bold sm:font-semibold">
         {skillSet.map((skill, index) => (
           <div
             key={index}
-            className={`flex-1 flex-shrink-0 min-w-[30%] max-w-[30%] text-lg transition duration-500 ease-in-out ${
+            className={`flex-1 flex-shrink-0 min-w-[30%] max-w-[30%] text-lg sm:text-base transition duration-500 ease-in-out ${
               mode ? "skills-container-dark" : "skills-container-light"
             }`}
           >

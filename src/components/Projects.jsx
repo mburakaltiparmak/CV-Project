@@ -17,7 +17,7 @@ const Projects = (props) => {
         <h2 className="text-5xl sm:text-4xl font-bold">{t("12")}</h2>
       </div>
       <div
-        className={`flex flex-row sm:flex-col sm:items-center justify-between gap-8 sm:gap-4 border-2 sm:border-1 rounded-lg transition duration-500 ease-in-out ${
+        className={`flex flex-row sm:flex-col sm:items-center justify-start  gap-8 sm:gap-4 border-2 sm:border-1 rounded-lg transition duration-500 ease-in-out ${
           mode
             ? "bg-[#2B2727] text-[#C1BAED]"
             : "bg-white text-[#4731D3] border-purple"
@@ -27,7 +27,7 @@ const Projects = (props) => {
           className="rounded-lg max-h-[250px] sm:max-h-[200px] w-fit object-cover"
           src={ecommerceImg}
         />
-        <div className="flex flex-col justify-center gap-4 sm:items-center">
+        <div className="flex flex-col justify-start items-start gap-4 py-2 sm:items-center">
           <h3 className="font-bold text-3xl">e-commerce site</h3>
           <p
             className={`font-semibold sm:text-center transition duration-500 ease-in-out ${
@@ -87,7 +87,7 @@ const Projects = (props) => {
         </div>
       </div>
       <div
-        className={`flex flex-row sm:flex-col sm:items-center justify-between gap-8 sm:gap-4 border-2 sm:border-1 rounded-lg transition duration-500 ease-in-out ${
+        className={`flex flex-row sm:flex-col sm:items-center justify-start gap-8 sm:gap-4 border-2 sm:border-1 rounded-lg transition duration-500 ease-in-out ${
           mode
             ? "bg-[#2B2727] text-[#C1BAED]"
             : "bg-white text-[#4731D3] border-purple"
@@ -97,8 +97,9 @@ const Projects = (props) => {
           className="rounded-lg max-h-[250px] sm:max-h-[200px] w-fit object-cover"
           src={filmImg}
         />
-        <div className="flex flex-col justify-center gap-4 sm:items-center">
-          <h3 className="font-bold text-3xl">Movie List</h3>
+
+        <div className="flex flex-col justify-start items-start gap-4 py-2 sm:items-center ">
+          <h3 className="font-bold text-3xl">Fav Movie List</h3>
           <p
             className={`font-semibold sm:text-center transition duration-500 ease-in-out ${
               mode ? "text-white" : "text-[#383838]"
@@ -126,6 +127,13 @@ const Projects = (props) => {
                 mode ? "bg-[#8173DA]" : "bg-[#4731D3]"
               }`}
             >
+              tailwind
+            </button>
+            <button
+              className={`rounded-3xl sm:px-4 px-8 py-3 sm:py-1 text-white font-semibold flex items-center transition duration-500 ease-in-out ${
+                mode ? "bg-[#8173DA]" : "bg-[#4731D3]"
+              }`}
+            >
               vercel
             </button>
           </span>
@@ -134,7 +142,7 @@ const Projects = (props) => {
               className={`underline transition duration-500 ease-in-out ${
                 mode ? "text-white" : "text-black"
               }`}
-              href="https://s11d3.vercel.app"
+              href="https://ecommerce-sage-xi.vercel.app"
             >
               {t("13")}
             </a>
@@ -142,7 +150,7 @@ const Projects = (props) => {
               className={`underline transition duration-500 ease-in-out ${
                 mode ? "text-white" : "text-black"
               }`}
-              href="https://github.com/mburakaltiparmak/s11d3"
+              href="https://github.com/mburakaltiparmak/ecommerce"
             >
               Github
             </a>

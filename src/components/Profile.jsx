@@ -1,5 +1,5 @@
 import React from "react";
-
+import gradImg from "../assets/gradImg.jpg";
 import profileImg from "../assets/profilImg.jpg";
 import { useSelector } from "react-redux";
 import { useTranslation } from "react-i18next";
@@ -47,7 +47,7 @@ const Profile = (props) => {
               className={`rounded-lg h-[350px] sm:h-[175px] w-fit object-cover shadow-md drop-shadow-2xl ${
                 mode ? "shadow-white" : "shadow-black"
               }`}
-              src={profileImg}
+              src={gradImg}
               alt=""
             />
             <span className="flex flex-col gap-4 sm:items-center">

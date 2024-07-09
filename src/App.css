@@ -9,7 +9,7 @@
 }
 
 .profile-infos {
-  @apply flex flex-row justify-between text-yellow font-normal text-lg;
+  @apply flex flex-row justify-between items-center text-yellow font-semibold text-lg;
 }
 
 .dark-header {

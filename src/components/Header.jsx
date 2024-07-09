@@ -70,7 +70,7 @@ const Header = (props) => {
               mode ? "text-yellow" : "text-white"
             }`}
           >
-            Burak Altıparmak
+            M.Burak Altıparmak
           </h2>
           <h1
             className={`text-5xl sm:text-3xl font-bold sm:text-center sm:w-full transition duration-500 ease-in-out  ${

@@ -52,12 +52,7 @@ const Profile = (props) => {
           <div className="flex flex-col items-start gap-8 sm:gap-4 sm:items-center">
             <h3 className="text-3xl font-bold text-yellow">{t("11")}</h3>
             <div className="text-lg font-semibold text-white sm:text-center">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
-                inventore accusamus, quisquam vero non quaerat dicta sint totam
-                doloribus? Inventore, asperiores consectetur enim repudiandae
-                quibusdam ratione minima voluptate laudantium atque.
-              </p>
+              <p>{t("17")}</p>
             </div>
           </div>
         </div>

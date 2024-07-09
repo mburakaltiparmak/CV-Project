@@ -34,10 +34,7 @@ const Projects = (props) => {
               mode ? "text-white" : "text-[#383838]"
             }`}
           >
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea labore
-            eum deleniti iure voluptas. Eos corrupti odio quibusdam, facere
-            impedit at debitis doloremque ut dolorum corporis quis esse, magnam
-            natus.
+            {t("18")}
           </p>
           <span className="flex flex-row gap-4 sm:gap-2 text-lg sm:text-base  sm:items-center">
             <button
@@ -107,10 +104,7 @@ const Projects = (props) => {
               mode ? "text-white" : "text-[#383838]"
             }`}
           >
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea labore
-            eum deleniti iure voluptas. Eos corrupti odio quibusdam, facere
-            impedit at debitis doloremque ut dolorum corporis quis esse, magnam
-            natus.
+            {t("19")}
           </p>
           <span className="flex flex-row gap-4 sm:gap-2 text-lg sm:text-base  sm:items-center">
             <button

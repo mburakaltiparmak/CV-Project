@@ -17,6 +17,7 @@ import {
   getText,
 } from "../store/actions/actions";
 import { useTranslation } from "react-i18next";
+import { Button } from "@radix-ui/themes";
 
 const Header = (props) => {
   const { t } = useTranslation();
@@ -65,11 +66,8 @@ const Header = (props) => {
         mode ? "dark-header" : "light-header"
       }`}
     >
-      <div
-        id="first-side"
-        className="flex flex-col justify-between lg:gap-4 w-full"
-      >
-        <div className="flex flex-col items-start justify-between gap-4  lg:items-center ">
+      <div id="first-side" className="flex flex-col gap-8 lg:gap-4 w-full">
+        <div className="flex flex-col items-start justify-between gap-8  lg:items-center ">
           <h2
             className={`text-2xl lg:text-3xl font-bold transition duration-500 ease-in-out  ${
               mode ? "text-yellow" : "text-white"
@@ -102,32 +100,42 @@ const Header = (props) => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button
+            <Button
+              size="4"
+              variant="solid"
+              radius="large"
               className={`p-4 lg:p-3 rounded-lg flex flex-row gap-2 items-center transition duration-500 ease-in-out  ${
                 mode
                   ? "border-white bg-[#252128] text-white"
                   : "border-black bg-white text-black"
               }`}
+              color={`${mode ? "grass" : "indigo"}`}
+              highContrast
             >
               <FontAwesomeIcon icon={faGithub} />
               Github
-            </button>
+            </Button>
           </a>
           <a
             href="https://www.linkedin.com/in/mburakaltiparmak/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button
+            <Button
+              size="4"
+              variant="solid"
+              radius="large"
               className={`p-4 lg:p-3 border-1 rounded-lg flex flex-row gap-2 items-center transition duration-500 ease-in-out ${
                 mode
                   ? "border-white bg-[#252128] text-white"
                   : "border-black bg-white text-black"
               }`}
+              color={`${mode ? "grass" : "indigo"}`}
+              highContrast
             >
               <FontAwesomeIcon icon={faLinkedin} />
               LinkedIn
-            </button>
+            </Button>
           </a>
         </div>
       </div>

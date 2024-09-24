@@ -30,7 +30,7 @@ const Projects = (props) => {
       name: "Pizza Order Site",
       description: t("20"),
       img: pizzaImg,
-      badges: ["react", "redux", "tailwind", "vercel", "nextjs"],
+      badges: ["react", "redux", "tailwind", "vercel", "nextjs", "shadcn"],
       website: "https://nextjs-pizza-mu.vercel.app/",
       github: "https://github.com/mburakaltiparmak/nextjs-pizza",
     },

@@ -5,6 +5,7 @@ import reactLogo from "../assets/Skills-icons/react.png";
 import vsCodeLogo from "../assets/Skills-icons/vs.png";
 import reduxLogo from "../assets/Skills-icons/redux.png";
 import figmaLogo from "../assets/Skills-icons/figma.png";
+import nextJsLogo from "../assets/Skills-icons/next-js.png";
 import { useSelector } from "react-redux";
 import { useTranslation } from "react-i18next";
 
@@ -33,29 +34,29 @@ const Skills = () => {
       logo: reduxLogo,
     },
     {
-      title: "Figma",
-      logo: figmaLogo,
+      title: "Next.js",
+      logo: nextJsLogo,
     },
   ];
 
   return (
     <div
-      className={`py-12 px-32 sm:px-10 sm:py-6 flex flex-col gap-8 transition duration-500 ease-in-out ${
+      className={`px-10 py-12 md:py-6 flex flex-col gap-8 transition duration-500 ease-in-out ${
         mode ? "bg-[#252128]" : "bg-white"
       }`}
     >
       <h2
-        className={`text-5xl sm:text-4xl sm:text-center font-bold transition duration-500 ease-in-out ${
+        className={`text-5xl md:text-4xl lg:text-center font-bold transition duration-500 ease-in-out ${
           mode ? "text-[#cbf281]" : "text-[#4832d3]"
         }`}
       >
         {t("3")}
       </h2>
-      <div className="flex flex-wrap sm:gap-2 justify-between gap-12 font-bold sm:font-semibold">
+      <div className="flex flex-row flex-wrap gap-12 justify-center items-center sm:flex-col sm:items-center sm:gap-2 font-bold md:font-semibold">
         {skillSet.map((skill, index) => (
           <div
             key={index}
-            className={`flex-1 flex-shrink-0 min-w-[30%] max-w-[30%] text-lg sm:text-base transition duration-500 ease-in-out ${
+            className={`flex flex-row gap-4 w-[30%] lg:w-[40%] text-lg sm:text-base transition duration-500 ease-in-out ${
               mode ? "skills-container-dark" : "skills-container-light"
             }`}
           >

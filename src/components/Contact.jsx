@@ -39,7 +39,7 @@ const Contact = (props) => {
 
   return (
     <div
-      className={`flex flex-col gap-8 items-center text-center transition duration-500 ease-in-out px-32 py-10 sm:py-4 sm:px-10 ${
+      className={`flex flex-col gap-8 items-center text-center transition duration-500 ease-in-out px-10 py-8 lg:py-4 ${
         mode ? "bg-[#252128] text-[#8F88FF]" : "bg-white text-[#4731D3]"
       }`}
     >

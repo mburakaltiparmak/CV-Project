@@ -39,9 +39,15 @@ export const getMode = () => async (dispatch) => {
 };
 
 export function sendText(language) {
+  let text = {};
+  if (language === "tr") {
+    text = resources.tr.translation;
+  } else {
+    text = resources.en.translation;
+  }
   return async (dispatch) => {
     try {
-      const response = await instance.post("/text", { language });
+      const response = await instance.post("/text", { language, text });
       console.log("Metin gönderimi başarılı.", response.data);
       dispatch(getText());
     } catch (error) {
@@ -50,12 +56,18 @@ export function sendText(language) {
   };
 }
 
-export function getText() {
+export function getText(lang) {
+  let id = null;
+  if (lang === "tr") {
+    id = 1;
+  } else {
+    id = 2;
+  }
   return async (dispatch) => {
     try {
-      const response = await instance.get("/text");
+      const response = await instance.get(`/text/${id}`);
       console.log("Metin alma başarılı.", response.data);
-      // Dispatch an action or handle the response data if needed
+      console.log("Çeviri - Translation : ", response.data.text);
     } catch (error) {
       console.error(error);
     }

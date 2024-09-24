@@ -10,39 +10,42 @@ const Profile = (props) => {
 
   return (
     <div
-      className={`flex flex-col justify-between px-32 py-8 gap-12 sm:px-10 sm:py-8 sm:gap-8 sm:items-center transition duration-500 ease-in-out ${
+      className={`flex flex-col justify-between px-10 py-8 gap-8 lg:items-center transition duration-500 ease-in-out ${
         mode ? "bg-[#171043]" : "bg-[#4731D3]"
       }`}
     >
-      <h2 className="text-5xl sm:text-4xl text-yellow font-bold">{t("4")}</h2>
-      <div className="flex flex-row sm:flex-col-reverse justify-between gap-4 sm:gap-16 sm:items-center ">
-        <div className="flex flex-col justify-start gap-8 items-stretch w-full">
+      <h2 className="text-5xl md:text-4xl text-yellow font-bold">{t("4")}</h2>
+      <div className="flex flex-row lg:flex-col-reverse justify-between gap-8 lg:items-center">
+        <div className="flex flex-col justify-start lg:items-center gap-4 items-stretch w-full">
           <h3 className="text-3xl font-bold text-white">{t("5")}</h3>
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4 w-full items-center lg:items-start lg:justify-center lg:w-fit">
             <span className="profile-infos">
-              <p className="sm:pr-2">{t("6")} :</p>
+              <p className="w-[125px] ">{t("6")}:</p>
               <p className="text-white">10.12.1996</p>
             </span>
+            <hr className="w-full text-white" />
             <span className="profile-infos ">
-              <p className="sm:pr-2">{t("7")} :</p>
+              <p className="w-[125px]">{t("7")}:</p>
               <p className="text-white">Kayseri</p>
             </span>
+            <hr className="w-full text-white" />
             <span className="profile-infos">
-              <p className="sm:pr-2">{t("8")} :</p>
-              <span className="flex flex-col items-end text-end">
-                <p className="text-white">{t("10")}</p>
-                <p className="text-white">{t("16")}</p>
-              </span>
+              <p className="w-[125px]">{t("8")}:</p>
+              <p className="text-white text-right w-[150px] lg:text-left">
+                {t("10")}
+              </p>
             </span>
+            <hr className="w-full text-white" />
             <span className="profile-infos">
-              <p>{t("9")} :</p>
+              <p className="w-[125px]">{t("9")}:</p>
               <p className="text-white">Frontend,UI</p>
             </span>
+            <hr className="w-full text-white" />
           </div>
         </div>
 
-        <div className="flex flex-row sm:gap-4  sm:flex-col sm:items-center ">
-          <div className="flex flex-row sm:flex-col items-start gap-8 sm:items-center">
+        <div className="flex flex-row sm:gap-4 lg:flex-col lg:items-center">
+          <div className="flex flex-row justify-between  lg:flex-col items-start gap-8 lg:items-center">
             <img
               className={`rounded-lg h-[350px] sm:h-[175px] w-fit object-cover shadow-md drop-shadow-2xl ${
                 mode ? "shadow-white" : "shadow-black"
@@ -50,9 +53,9 @@ const Profile = (props) => {
               src={gradImg}
               alt=""
             />
-            <span className="flex flex-col gap-4 sm:items-center">
+            <span className="flex flex-col gap-4 lg:items-center">
               <h3 className="text-3xl font-bold text-yellow">{t("11")}</h3>
-              <div className="text-lg font-semibold text-white sm:text-center w-3/4 ">
+              <div className="text-lg font-semibold text-white lg:text-center ">
                 <p>{t("17")}</p>
               </div>
             </span>

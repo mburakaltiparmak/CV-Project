@@ -4,6 +4,7 @@ import filmImg from "../assets/film.png";
 import pizzaImg from "../assets/pizza.png";
 import { useSelector } from "react-redux";
 import { useTranslation } from "react-i18next";
+import { Badge } from "@radix-ui/themes";
 
 const Projects = (props) => {
   const mode = useSelector((state) => state.main.mode);
@@ -69,14 +70,17 @@ const Projects = (props) => {
             </p>
             <span className="flex flex-row flex-wrap gap-4 lg:gap-2 text-lg lg:text-base lg:items-center lg:justify-center">
               {item.badges.map((badge, badgeIndex) => (
-                <button
+                <Badge
                   key={badgeIndex}
-                  className={`w-[70px] h-[35px] rounded-3xl text-white font-semibold flex justify-center items-center transition duration-500 ease-in-out ${
-                    mode ? "bg-[#8173DA]" : "bg-[#4731D3]"
-                  }`}
+                  variant="solid"
+                  size="3"
+                  radius="full"
+                  className="w-[70px] h-[35px] rounded-3xl text-white font-semibold flex justify-center items-center transition duration-500 ease-in-out"
+                  color={`${mode ? "purple" : "indigo"}`}
+                  highContrast
                 >
                   {badge}
-                </button>
+                </Badge>
               ))}
             </span>
             <span className="flex flex-row items-center gap-4 font-semibold text-lg sm:text-base sm:py-2 ">
